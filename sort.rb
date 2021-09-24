@@ -4,7 +4,7 @@ def bubble_sort(number)
   num = number.count  
   num.times do |n| 
     (num - 1 - n).times do |f|
-      number[f+1],number[f] = number[f],number[f+1] if number[f] < number[f+1]
+      number[f + 1],number[f] = number[f],number[f + 1] if number[f] < number[f + 1]
     end
   end
   number
