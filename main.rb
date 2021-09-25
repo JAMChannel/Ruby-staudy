@@ -14,8 +14,6 @@ end
 
 def presentation
   puts "結果"
-  @hako.group_by(&:itself).transform_values(&:size)
-  hakos = @hako.count
   hako1 = @hako.select{|n|n.include?("勝ち!") }
   hako2 = @hako.select{|n|n.include?("負け!") }
   if hako1 == hako2
@@ -25,8 +23,6 @@ def presentation
   else
     puts "#{hako1.count}勝#{hako2.count}敗で負け"
   end
-
-
 end
 
 def janken(num)
